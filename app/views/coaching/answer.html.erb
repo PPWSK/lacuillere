@@ -1,0 +1,10 @@
+<h1>Coaching#answer</h1>
+<p>Find me in app/views/coaching/answer.html.erb</p>
+
+<% ingredients = [ 'stupid question, son', 'i don care my boy', 'finally!' ] %>
+
+
+<div><h2><%= @my_question %></h2><p>- You</p></div>
+<div><h2><%= ingredients.sample %></h2><p>- Your coach</p></div>
+
+<%= link_to 'ask a new question', question_path %>

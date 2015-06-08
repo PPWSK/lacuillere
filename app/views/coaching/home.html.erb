@@ -1,0 +1,20 @@
+<h1>Coaching#home</h1>
+<p>Find me in app/views/coaching/home.html.erb</p>
+
+<h1>A 100%-HTML greetings!</h1>
+<% name = "boris" %>
+<p>Hello <%= name.capitalize %>!</p>
+
+<p>Today we are <%= Time.now.strftime("%d/%m/%Y") %><p>
+
+<p>Last year defined in controller: <%= @last_year %></p>
+
+<% ingredients = [ 'milk', 'sugar', 'bread' ] %>
+
+<h2>Shopping list</h2>
+
+<ol>
+<% ingredients.each do |ingredient| %>
+  <li><%= ingredient %></li>
+<% end %>
+</ol>
